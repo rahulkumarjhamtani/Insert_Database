@@ -12,12 +12,20 @@
 <body>
 
     <div class="square1">
-        
+
     </div>
 
     <div class="container">
         <h1>Welcome to my form</h1>
-        <p>Enter your details and submit this form to confirm your participation</p>
+    </div>
+
+    <div class="myform">
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="number" name="age" id="age" placeholder="Age">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="Password" id="Password" placeholder="Password">
+        </form>
     </div>
 
 </body>
