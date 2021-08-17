@@ -23,12 +23,7 @@ html
 .container:hover
 {
     backdrop-filter: blur(30px);
-    width:75%;
-}
-.myform:hover
-{
-    backdrop-filter: blur(30px);
-    width:45%;
+    width:70.5%;
 }
 .container h1
 {
@@ -36,26 +31,58 @@ html
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#a0b0ff;
 }
-.square1
+.dot1, .dot2, .dot3
 {
     position: absolute;
-    left:80px;
-    top:37px;
+    width:30px;
     height: 30px;
-    width:280px;
     /* background-image: linear-gradient(270deg, #4158D0 0%, #C850C0 66%, #FFCC70 100%); */
-    background-image: linear-gradient(to right, #ff8177 2%, #ff867a 4%, #ff8c7f 10%, #f99185 25%, #cf556c 60%, #b12a5b 100%);
+    /* background-image: linear-gradient(to right, #ff8177 2%, #ff867a 4%, #ff8c7f 10%, #f99185 25%, #cf556c 60%, #b12a5b 100%); */
     border-radius: 100px;
-    animation-name: load;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-@keyframes load {
-    0%   {left:80px; top:37px;}
-    25%  {left:995px; top:37px;}
-    50%  {left:995px; top:219px;}
-    75%  {left:80px; top:219px;}
-    100% {left:80px; top:37px;}
+.dot1
+{
+    left:90px;
+    top:37px;
+    background-image: linear-gradient(to right, #c7fffc, #a8fffb);
+    animation-name: move1;
+}
+.dot2
+{
+    left:154px;
+    top:37px;
+    background-image: linear-gradient(to right, #a0fffa, #70faff);
+    animation-name: move2;
+}
+.dot3
+{
+    left:218px;
+    top:37px;
+    background-image: linear-gradient(to right, #48fff0, #00eeff);
+    animation-name: move3;
+}  
+@keyframes move1 {
+    0%   {left:90px; top:37px;}
+    25%  {left:1100px; top:37px;}
+    50%  {left:1100px; top:219px;}
+    75%  {left:90px; top:219px;}
+    100% {left:90px; top:37px;}
+} 
+@keyframes move2 {
+    0%   {left:154px; top:37px;}
+    25%  {left:1164px; top:37px;}
+    50%  {left:1164px; top:219px;}
+    75%  {left:154px; top:219px;}
+    100% {left:154px; top:37px;}
+  } 
+@keyframes move3 {
+    0%   {left:218px; top:37px;}
+    25%  {left:1228px; top:37px;}
+    50%  {left:1228px; top:219px;}
+    75%  {left:218px; top:219px;}
+    100% {left:218px; top:37px;}
   } 
 input
 {
@@ -72,9 +99,14 @@ input
     outline:none;
     color:rgb(253, 234, 234);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition:width 0.3s;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+input:hover
+{
+    width:55%;
 }

@@ -11,9 +11,9 @@
 
 <body>
 
-    <div class="square1">
-
-    </div>
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
 
     <div class="container">
         <h1>Welcome to my form</h1>
