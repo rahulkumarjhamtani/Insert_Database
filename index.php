@@ -20,8 +20,6 @@
         $insert = false;
         if(isset($_POST['name']))
             {
-
-                
                 $server = "localhost";
                 $username = "root";
                 $password = "";
@@ -67,7 +65,7 @@
                 echo "<h1 id='success'>Success</h1>";
 
             }
-            else
+            elseif($insert == false)
             {
                 echo "<h1 id='fail'>Failed</h1>";
             }
@@ -78,7 +76,7 @@
             <input type="email" name="email" id="email" placeholder="Email" required>
             <input type="password" name="pass" id="pass" placeholder="Password" required>
             <button class="btn btn1">Submit</button>
-            <button class="btn btn2">Clear</button>
+            <button id="reset" class="btn btn2">Clear</button>
         </form>
     </div>
 
@@ -87,5 +85,3 @@
 <script src="assets/js/script.js"></script>
 
 </html>
-
-<!-- INSERT INTO `details` (`sno`, `name`, `age`, `email`, `password`, `date`) VALUES ('1', 'Rahul', '20', 'rahul@gmail.com', 'rahul', current_timestamp()); -->
