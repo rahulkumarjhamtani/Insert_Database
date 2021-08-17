@@ -52,8 +52,8 @@ html
 }
 @keyframes load {
     0%   {left:80px; top:37px;}
-    25%  {left:1000px; top:37px;}
-    50%  {left:1000px; top:219px;}
+    25%  {left:995px; top:37px;}
+    50%  {left:995px; top:219px;}
     75%  {left:80px; top:219px;}
     100% {left:80px; top:37px;}
   } 
