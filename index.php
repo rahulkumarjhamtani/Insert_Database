@@ -15,6 +15,34 @@
 </head>
 
 <body>
+
+    <!-- <?php
+        $server = "localhost";
+        $username = "root";
+        $password = "";
+
+        $con = mysqli_connect($server, $username, $password);
+        if (!$con) {
+            die("Connection failed due to " . mysqli_connect_error());
+        }
+
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $sql = "INSERT INTO `demo`.`details` (`name`, `age`, `email`, `password`, `date`) VALUES ('$name', '$age', '$email', '$password', current_timestamp());";
+
+        // echo $sql;
+
+        if ($con->query($sql) == true) {
+            echo "Inserted";
+        } else {
+            echo "ERROR : $sql <br> $con->error";
+        }
+
+        $con->close();
+    ?> -->
     <div class="shape1"></div>
     <div class="shape2"></div>
     <div class="dot1"></div>
@@ -27,10 +55,11 @@
 
     <div class="myform">
         <form action="index.php" method="post">
+            <h1>Success</h1>
             <input type="text" name="name" id="name" placeholder="Name" required>
             <input type="number" name="age" id="age" placeholder="Age" required>
             <input type="email" name="email" id="email" placeholder="Email" required>
-            <input type="password" name="Password" id="Password" placeholder="Password" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
             <button class="btn btn1">Submit</button>
             <button class="btn btn2">Clear</button>
         </form>
