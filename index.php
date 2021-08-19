@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.png">
     <title>Fill Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +68,8 @@
             }
             elseif($insert == false)
             {
-                echo "<h1 id='fail'>Failed</h1>";
+                echo "<h1></h1>";
+                // echo "<h1 id='fail'>Failed</h1>";
             }
             
             ?>
